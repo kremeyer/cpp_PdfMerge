@@ -1,2 +1,2 @@
 make: main.cpp
-	g++ main.cpp -o PdfMerge
+	g++ -I ${{env.GITHUB_WORKSPACE}} main.cpp -o PdfMerge
