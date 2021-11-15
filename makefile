@@ -1,2 +1,2 @@
 make: main.cpp
-	g++ -I /home/runner/boost main.cpp -o PdfMerge
+	g++ -I ${{ steps.install-boost.outputs.BOOST_ROOT }} main.cpp -o PdfMerge
