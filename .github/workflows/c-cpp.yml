@@ -12,6 +12,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Install boost
+      uses: MarkusJx/install-boost@v2.0.0
+      id: install-boost
+      with:
+        boost_version: 1.76.0
     - uses: actions/checkout@v2
     - name: make
       run: make
