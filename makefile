@@ -1,2 +1,2 @@
 make: main.cpp
-	g++ main.cpp -o PdfMerge
+	g++ main.cpp -L .libs/boost -l boost -o PdfMerge
