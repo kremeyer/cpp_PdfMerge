@@ -17,6 +17,7 @@ jobs:
       id: install-boost
       with:
         boost_version: 1.76.0
+        boost_install_dir: .libs/boost
     - uses: actions/checkout@v2
     - name: make
       run: make
