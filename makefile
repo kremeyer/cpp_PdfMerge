@@ -1,5 +1,3 @@
-BOOST_ROOT := ${{ steps.install-boost.outputs.BOOST_ROOT }}
-
 make: main.cpp
 	pwd
 	ls
