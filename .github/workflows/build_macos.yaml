@@ -10,11 +10,11 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     # install dependencies
-  - name: boost
-    uses: MarkusJx/install-boost@v2.0.0
-    id: install-boost
-    with:
-      boost_version: 1.76.0
+    - name: boost
+      uses: MarkusJx/install-boost@v2.0.0
+      id: install-boost
+      with:
+        boost_version: 1.76.0
     # build project
     - name: make build
       run: make
