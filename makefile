@@ -1,4 +1,4 @@
-BOOST_ROOT := /home/runner/work/cpp_PdfMerge/cpp_PdfMerge/boost
+BOOST_ROOT := ${{ steps.install-boost.outputs.BOOST_ROOT }}
 
 make: main.cpp
 	pwd
